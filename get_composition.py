@@ -15,7 +15,8 @@ config = {
     'num_pages_for_keyword': 1,
     'scrape_method': 'http',
     'log_level': 'NOTSET',
-    'do_caching': 'True'
+    'do_caching': 'True',
+    'clean_cache_after': 4800
 }
 
 try:
