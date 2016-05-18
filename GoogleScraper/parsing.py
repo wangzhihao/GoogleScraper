@@ -398,6 +398,13 @@ class GoogleParser(Parser):
         },
         'ads_aside': {
 
+        },
+        'compositions' : {
+            'us_ip' : {
+                'container': '#appbar',
+                'result_container': '.rl_item',
+                'title': '.title::text'
+            }
         }
     }
 
