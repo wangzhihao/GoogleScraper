@@ -225,9 +225,10 @@ sleeping_ranges = {
 # option {search_engine_name}_sleeping_ranges, then
 # only this search engine will sleep the supplied ranges.
 google_sleeping_ranges = {
-    1:  (200, 300),
-    5:  (300, 500),
-    30: (500, 600)
+    1:  (2, 3),
+    5:  (3, 5),
+    30: (10, 20),
+    127: (30, 50),
 }
 
 # If the search should be simulated instead of being done.

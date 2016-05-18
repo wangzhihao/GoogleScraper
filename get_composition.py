@@ -12,6 +12,9 @@ keywords = map((lambda item: item['name'] + ' compositions') ,filter(lambda x: '
 config = {
     'keywords': keywords,
     'search_engines': ['google'],
+    'google_sleeping_ranges':  {
+        1:  (2, 3)
+    },
     'num_pages_for_keyword': 1,
     'scrape_method': 'http',
     'log_level': 'NOTSET',
