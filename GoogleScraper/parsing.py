@@ -403,6 +403,7 @@ class GoogleParser(Parser):
             'us_ip' : {
                 'container': '#appbar',
                 'result_container': '.rl_item',
+                'link': '.title::text', # this is placeholder. the data itself make no sense.
                 'title': '.title::text'
             }
         }
