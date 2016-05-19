@@ -2,14 +2,14 @@
 set -e
 ## declare an array variable
 declare -a ips=(
-"159.203.105.254"
-"159.203.105.219"
-"159.203.106.56"
+#"159.203.105.254"
+#"159.203.105.219"
+#"159.203.106.56"
 #"159.203.98.79"
-"159.203.111.87"
-"45.55.217.115"
+#"159.203.111.87"
+#"45.55.217.115"
 #"45.55.216.203"
-"45.55.214.239"
+#"45.55.214.239"
 #"45.55.214.153"
 #"159.203.166.3"
 )
@@ -30,8 +30,8 @@ do
        #echo "found "$db_name" for "$HOSTNAME
        echo $HOSTNAME has already executed these queries:
        sqlite3 $db_name "select count(*) from serp;" 
-       echo $HOSTNAME has already collected these compositions:
-       sqlite3 $db_name "select count(*) from link;" 
+       #echo $HOSTNAME has already collected these compositions:
+       #sqlite3 $db_name "select count(*) from link;" 
      fi
    done
    ' | ssh $server bash -s -
