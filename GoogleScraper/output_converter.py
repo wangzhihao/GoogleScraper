@@ -118,7 +118,7 @@ def store_serp_result(serp, config):
             outfile.write(data, serp)
         elif output_format == 'stdout':
             if config.get('print_results') == 'summarize':
-                print(serp)
+                #print(serp)
             elif config.get('print_results') == 'all':
                 pprint.pprint(data)
 
