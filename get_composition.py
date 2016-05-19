@@ -3,7 +3,7 @@
 from GoogleScraper import scrape_with_config, GoogleSearchError
 import json
 
-with open('composers.json') as data_file:    
+with open('data/composers.json') as data_file:    
     data = json.load(data_file)
 
 keywords = map((lambda item: item['name'] + ' compositions') ,filter(lambda x: 'name' in x, data))
