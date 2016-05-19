@@ -15,4 +15,5 @@ def dump(alist, name):
 data = split_list(data, wanted_parts=10)    
 
 for index, alist in enumerate(data):
+    #print(len(alist))
     dump(alist, 'composer' + str(index) + '.json')
