@@ -16,8 +16,6 @@ config = {
         1:  (2, 3)
     },
     'num_pages_for_keyword': 1,
-    'num_workers' : 2,
-    'proxy_file' : 'proxies.txt',
     'scrape_method': 'http',
     'log_level': 'NOTSET',
     'do_caching': 'True',
