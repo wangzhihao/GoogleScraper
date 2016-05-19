@@ -29,6 +29,8 @@ do
        #echo "found "$db_name" for "$HOSTNAME
        echo $HOSTNAME has already executed these queries:
        sqlite3 $db_name "select count(*) from serp;" 
+       echo $HOSTNAME has already collected these compositions:
+       sqlite3 $db_name "select count(*) from link;" 
      fi
    done
    ' | ssh $server bash -s -
