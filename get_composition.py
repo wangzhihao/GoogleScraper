@@ -19,6 +19,7 @@ config = {
     'scrape_method': 'http',
     'log_level': 'NOTSET',
     'do_caching': 'True',
+    'database_name': 'google_scraper',
     'clean_cache_after': 4800
 }
 
